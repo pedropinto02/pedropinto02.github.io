@@ -1,0 +1,594 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HY695B0DFW"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-HY695B0DFW');
+		</script>
+
+
+		<title>Pedro Pinto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<style>
+			.hidden {
+				display: none;
+			}
+		</style>
+		<script>
+
+
+			function showSection(sectionId) {
+				// Hide all sections
+				$('section').hide();
+				// Show the selected section
+				$('#' + sectionId).show();
+    		}
+
+			// Ensure only the profile section is visible on page load
+			$(document).ready(function() {
+				// Hide all sections initially
+				$('section').hide();
+				// Show the profile section by default
+				$('#profile').show();
+			});
+		</script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided">			
+
+			<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul>
+						<li><a href="#profile" onclick="showSection('profile')">Profile</a></li>
+                    	<li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+                    	<li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+						<li><a href="#education" onclick="showSection('education')">Education</a></li>
+                    	<li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+						<li><a href="#hobbies" onclick="showSection('hobbies')">Hobbies</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="profile" section class="banner style3 fullscreen orient-left content-align-left image-position-right onload-image-fade-in onload-content-fade-right">
+				<div class="content">
+					<h1>Pedro Pinto</h1>
+					<p class="major">
+						<p>I am a recent mechanical engineering graduate from the University of 
+							Michigan Ann Arbor. Growing up, I witnessed the development and technical breakthroughs of reusable 
+							rockets, private spaceflight, robotic interplanetary exploration, sustainable 
+							transportation, and more. This led me to develop a strong passion for engineering, a desire to push the 
+							boundaries of what is possible, and to create a lasting impact on society. 
+						</p>
+						<p>Throughout my extensive work experiences in the aerospace
+							and automotive industries, I have gained skills and perspectives in many aspects of engineering, 
+							including design, simulation/analysis, software, and 
+							manufacturing. This portfolio details those, as well as some of the other projects that I have worked on.
+						</p>  
+
+
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/aaron-feng/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:aaronfeng12@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<a href="images/Resume_AaronFeng_030825.pdf" class="button big wide smooth-scroll-center">My Resume</a></li>
+						</div>
+
+						<!--<p></p>
+						<p>Template from <a href="https://html5up.net">HTML5 UP</a>.</p>
+						-->
+				</div>
+
+				<div class="image">
+					<img src="images/banner.jpg" alt="" />
+				</div>
+
+
+
+			</section>
+
+
+			<section id="experience">
+
+				<!-- Relativity -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Relativity Space / Integrated Performance Engineer Intern</h2>
+						<p>
+							Long Beach, CA (May 2023 - Aug 2023, May 2024 - July 2024)
+						</p>
+						<p> Further solidifying my previous experience in simulation/analysis, here
+							I developed a convection tool and GUI that allowed for various input parameters and geometries,
+							implemented a simulation post processing tool for obtaining the heat flow between subgroups, conducted
+							research into aft end protection and ullage diffuser effects on propellant tanks, and modeled
+							the transient buildup of frost on the exterior of the launch vehicle. 
+							I also created and analyzed thermal models of the Terran R throttle valve actuator, electrical cables, 
+							and thermal protection system.
+						</p>
+					</div>
+
+					<div class="image">
+						<img src="images/relativity.png" alt="" />
+					</div>
+
+				</div>
+
+				<!-- GSI -->
+				<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>University of Michigan / Graduate Student Instructor</h2>
+						<p>
+							Ann Arbor, MI (Jan 2024 - Dec 2024)
+						</p>
+						<p> I instructed ME395 (Lab I) sections. 
+							Primarily, I taught and guided students to run/troubleshoot vibration, vapor compression cycle, 
+							aluminum tensile/fracture toughness, DC motor control, turbomachine, and wind tunnel experiments. 
+							In addition, I held office hours, answered technical questions, and graded lab reports. 
+						</p>
+					</div>
+					<div class="image">
+						<img src="images/gsi2.png" alt="" />
+					</div>
+				</div>
+
+				<!-- Rivian -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<div class="content">
+						<h2>Rivian / Aerothermal Systems Engineer Intern</h2>
+						<p>
+							Irvine, CA (May 2022 - Aug 2022)
+						</p>
+						<p> I evaluated heat management with composite materials and the associated potential range improvements for EDV and R1S.
+							In addition, I automated a StarCCM+ simulation workflow, reducing the number of steps by 66%. 
+							Furthermore, I developed a long term insulation pack for human comfort by optimizing insulation location, geometry, material, and thickness; 
+							this solution was used in 15,000 vehicles. It took into
+							account various factors, including forced convection from external airflow, the varying solar heat load thoroughout the day, and the cargo door. 
+							I also determined evaporator cooling power required for varying ambient conditions, for human comfort/safety in EDV cargo compartment.
+							Finally, I quantified the benefits of different EDV roof colors, and conducted material stack configuration and fan characterization testing. 
+							This was a great experience in approaching and reducing complex problems comprehensively, in order to fully understand and explore the entire design
+							space when searching for a solution. 
+						</p>
+					</div>
+					<div class="image">
+						<img src="images/rivian2.png" alt="" />
+					</div>
+				</div>
+
+				<!-- Tesla -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Tesla / Manufacturing Engineer Intern</h2>
+						<p>
+							Austin, TX (Jan 2022 - May 2022)
+						</p>
+						<p> I streamlined the Model Y fascia assembly line and reduced the cycle time using process flow layouts and time studies.
+							I also designed and assembled quality inspection light fixtures, as well as a 2QPC buffer storage method to accommodate urgent process needs.
+							I established standard work procedures for the front and rear fascia assembly process, trained operators, and supported production teams. 
+							Finally, I presented and coordinated a major design change review for the assembly line, reducing finished goods transfer time by 70%.
+							I learned a lot about managing and balancing the diverse goals and requirements of multiple stakeholders.
+						</p>
+					</div>
+					<div class="image">
+						<img src="images/tesla2.png" alt="" />
+					</div>
+				</div>
+
+				<!-- H.A. -->
+				<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<div class="content">
+						<h2>H.A. Automotive Systems / Design Engineer Intern</h2>
+						<p>
+							Troy, MI (June 2021 - Jan 2022)
+						</p>
+						<p> I conducted Design Failure Mode and Effect Analysis (DFMEA) on headlamps and taillamps. 
+							I also employed CAD and DFM principles to model plastic/metal components and enclosures, as well as improve the aesthetics and structural stiffness of proposed products. 
+							In particular, I designed, assembled, and validated a green filter taillamp prototype which was adopted by GM as a benchmark/proof of concept, 
+							resulting in $100,000 additional market value revenue. Highlights included designing the housing, carrier board, mechanical PCB layout, and
+							heat sink for this application, as well as 
+							conducting optical/colorimetry testing. Overall, I learned how to own a product from start to end of 
+							the engineering process. 
+						</p>
+					</div>
+					<div class="image">
+						<img src="images/ha.png" alt="" />
+					</div>
+				</div>
+
+			</section>
+
+
+			<section id="projects">
+
+				<!-- UAV -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>UAV</h2>
+						<p> A 3D printed drone for aerial photography, designed for stability, long endurance, and heavy modular payloads. 
+							My electric ducted fan powered design features a 48 in. wingspan, high aspect ratio wings, and is controlled using 2 elevons. 
+							Camera is removable and mounted below the fuselage for good field of view. 
+							Potential future work could involve autonomous/preplanned flights. 
+							Manufacturing is still a work in progress. 
+						</p>
+
+					</div>
+					<div class="image">
+						<img src="images/drone.png" alt="" />
+					</div>
+				</div>
+
+
+				<!-- MATH540 -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Satellite Constellation Network Analysis</h2>
+						<p> Analysis of the connectivity and network topology between existing satellite constellations
+							(Iridium and Starlink), to assess relay optimization, robustness, and latency.
+							This is accomplished by determining the connectivity and weighted undirected adjacency matrices
+							for the network at a given moment in time, assuming that the Earth is the only
+							obstruction to line of sight to intersatellite communication. This involved processing TLE data and propagating
+							the orbits using the Keplerian elements using MATLAB to determine each position and speed. The network uses
+							satellite positions as nodes, connections as edges, and simulates a dynamic
+							model of network behavior to obtain the centrality and relative importance of each node.
+						</p>
+
+					</div>
+					<div class="image">
+						<img src="images/540.png" alt="" />
+					</div>
+				</div>
+
+
+				<!-- MATH590 -->
+				<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Microstructure Characterization of Additively Manufactured Steel</h2>
+						<p> This research project involved image processing EBSD scans of additively manufactured stainless steel. 
+							This involved characterization and data analysis of the microstructure (grain and pores) 
+							using MTEX. 
+							The pore distribution, diameter, sphericity,
+							volume, and connectivity by number of adjacent grains were analyzed.  
+							Methods (using connected components and voxels) used were successfully validated
+							by checking smaller sections. The results enable understanding and visualization of overall 
+							sample microstructure and statistics, and also assist in identification of regions of interest.
+
+						</p>
+
+					</div>
+					<div class="image">
+						<img src="images/590.png" alt="" />
+					</div>
+				</div>
+
+
+				<!-- ME553 -->
+				<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<div class="content">
+						<h2>Electrospray Microthruster</h2>
+						<p>
+							A thruster that was designed and analyzed for ME553 (Microelectromechanical Systems).
+							Electrospray microthruster technology shows potential for applications
+							such as small satellite missions due to low mass, compact size, adaptability, modularity, and precise propulsive forces. 
+							Literature reviews were conducted to incorporate nanoscale emitters 
+							that can achieve higher thrust densities and exploit geometric trends. 
+							A microthruster was proposed/sized to meet mass, thrust, specific impulse, and input voltage specifications for a lunar cubesat.
+						</p>
+
+					</div>
+					<div class="image">
+						<img src="images/553.png" alt="" />
+					</div>
+				</div>
+
+
+				<!-- ME350 -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Mechatronics Linkage</h2>
+						<p> A four-bar linkage that was designed and manufactured to compete and win the ME350 (Design & Manufacturing II) competition. 
+							The objective was to rotate a flashlight to target various photosensors indicated by raised flags
+							located throughout a playing field. Using proximity sensors, the system detected 
+							the state of the flags, and used a controller to move the light beam to the necessary 
+							location and orientation. The team designed and simulated a lightweight system that was rigid, consistent/simple to setup, 
+							minimized rotational inertia and traversal time, and had a relatively low transmission angle deviation. 
+							Calibration was performed using a limit switch and accounted for hysteresis. 
+						</p>
+
+					</div>
+					<div class="video">
+						<video controls autoplay loop>
+							<source src="images/350mp4.mp4" loading = "lazy" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+
+				<!-- ME250 -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<div class="content">
+						<h2>Robot Machine Player</h2>
+						<p>A remote-controlled robot that was designed and manufactured to compete and win the ME250 (Design & Manufacturing I) competition. 
+							Key objectives included the ability to traverse rough terrain/inclines, 
+							hold open a door, collect cubes from the other robots, pick cubes up, 
+							and transport cubes. Constraints included dimensions, cost, and number of motors used. 
+							Extensive waterjetting, laser cutting, and mill/lathe was used, in addition to 3D printing for rapid iteration.
+							Mechanisms used included rollers and a conveyor belt.
+						</p>
+
+					</div>
+					<div class="video">
+						<video controls autoplay loop>
+							<source src="images/250mp4.mp4" loading = "lazy" type="video/mp4">
+						</video>
+					</div>
+
+					
+				</div>
+
+				<!-- ENTR -->
+				<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Smart Sink</h2>
+						<p> Smart, low cost faucet attachment that measures the water rate and volume through a faucet.
+							An Arduino in a 3D printed case calculates the total water usage through a flow meter, and sends the data through Bluetooth 
+							to a user-friendly Android app. The objective was to reduce water consumption through improved 
+							monitoring and awareness (ironically, a lot of water was used in order to validate the prototype). 
+						</p>
+
+					</div>
+					<div class="image">
+						<img src="images/entr.PNG" alt="" />
+					</div>
+				</div>
+
+			</section>
+
+
+			<section id="education" section class="wrapper style1 align-left">
+					<div class="inner">	
+						<h2>MSE Mechanical Engineering, University of Michigan Ann Arbor</h2>
+						<p>
+						(Jan 2024 - Dec 2024)
+						<p>
+							Digital Control Systems, Finite Element Methods, Advanced Batteries, Experimental Design, Microelectromechanical Systems, Design Optimization, Robotic Kinematics & Dynamics, Nanofabrication, Mathematics of Biological Networks (GPA: 4.00)
+						</p>
+						<h2>BSE Mechanical Engineering, University of Michigan Ann Arbor</h2>
+						<p>
+						(Aug 2021 - Dec 2023)
+						<p>
+							Advanced Energy Solutions, Sustainable Engineering, Solar Thermal Systems, Research (GPA: 3.97)
+						</p>
+
+						<h2>BS Aerospace Engineering (transferred), University of Illinois Urbana-Champaign	</h2>
+						<p>
+						(Jun 2019 - May 2021)
+						<p>
+							Discrete Structures, Data Structures, Flight Mechanics, Mechanics of Aerospace Structures, Incompressible Flow, Computer Architecture, Numerical Methods, Algorithms (GPA: 3.80) 
+						</p>
+
+					</div>
+				</section>
+			</section>
+
+
+			<section id="skills">
+				<div class="wrapper style1 align-center">
+					<div class="items style1 small">
+						<div>
+							<span class="icon solid style2 major fa-code"></span>
+							<h3>C++</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-code"></span>
+							<h3>Java</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-chart-bar"></span>
+							<h3>Python</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-code"></span>
+							<h3>JavaScript</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-chart-bar"></span>
+							<h3>MATLAB</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-bolt"></span>
+							<h3>TensorFlow</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-desktop"></span>
+							<h3>NX</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-desktop"></span>
+							<h3>CATIA</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-desktop"></span>
+							<h3>SolidWorks</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-desktop"></span>
+							<h3>AutoCad</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-desktop"></span>
+							<h3>ANSA</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-desktop"></span>
+							<h3>HyperMesh</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-keyboard"></span>
+							<h3>Thermal Desktop</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-keyboard"></span>
+							<h3>Ansys</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-keyboard"></span>
+							<h3>TaiTherm</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-keyboard"></span>
+							<h3>StarCCM+</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-keyboard"></span>
+							<h3>Adams</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-keyboard"></span>
+							<h3>COMSOL</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-satellite"></span>
+							<h3>STK</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-sitemap"></span>
+							<h3>EAGLE</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-cogs"></span>
+							<h3>3D Printing</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-cogs"></span>
+							<h3>Mill</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-cogs"></span>
+							<h3>Lathe</h3>
+
+						</div>
+						<div>
+							<span class="icon solid style2 major fa-cogs"></span>
+							<h3>Laser Cutting</h3>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+
+			<section id="hobbies">
+
+				<!-- Flute -->
+				<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Flute & Piccolo</h2>
+						<p> 
+							I played the flute and piccolo (and sometimes alto flute) for all four years of high school. 
+							I was part of our marching band (section leader, squad leader), symphonic band, symphony orchestra, and pit orchestra. 
+							I also played in the MSBOA All-State Band, MYAF Band, and Detroit Symphony Youth Wind Ensemble. 
+							Nowadays I play every once in a while for church gatherings/events.
+						</p>
+
+					</div>
+					<div class="image">
+						<img src="images/flute.png" alt="" />
+					</div>
+				</div>
+
+
+				<!-- Swim -->
+				<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Swim</h2>
+						<p> 
+							I was on my high school varsity swim team for my junior and senior years of high school,
+							with my main competitive events being freestyle sprints. I still swim regularly for exercise.
+						</p>
+
+					</div>
+					<div class="image">
+						<img src="images/swim.png" alt="" />
+					</div>
+				</div>
+
+
+				<!-- Golf -->
+				<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Golf</h2>
+						<p> 
+							I was on my high school golf team for all four years of high school. I don't play as much
+							these days, but still try to get out on the driving range when the weather's nice.
+						</p>
+
+					</div>
+					<div class="video">
+						<video controls autoplay loop muted>
+							<source src="images/golf.mp4" loading = "lazy" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+			</section>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+	</body>
